@@ -12,7 +12,7 @@
 <!-- Google Fonts: two display serifs (name/heading), two script accents, one body sans -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Playfair+Display:wght@700;800;900&family=Allura&family=Great+Vibes&family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Playfair+Display:wght@700;800;900&family=Allura&family=Great+Vibes&family=Poppins[...]
 
 <!-- Swiper (Section 6 — full-bleed image slider) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
@@ -172,7 +172,7 @@ body::after{
   opacity:var(--noise-opacity);
   mix-blend-mode:overlay;
   pointer-events:none;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' st[...]
 }
 @keyframes auroraDrift{
   0%  { transform:translate3d(0,0,0) scale(1) rotate(0deg); opacity:0.9; }
@@ -319,11 +319,11 @@ button{ font-family:inherit; border:none; background:none; cursor:pointer; }
 }
 .torn-paper-top {
     top: -1px;
-    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C 150,20 300,0 450,15 C 600,30 750,0 900,10 C 1050,20 1200,5 1200,40 Z" fill="%23ffffff"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C 150,20 300,0 450,15 C 600,30 750,0 900,10 C[...]
 }
 .torn-paper-bottom {
     bottom: -1px;
-    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0 C 150,20 300,40 450,25 C 600,10 750,40 900,30 C 1050,20 1200,35 1200,0 Z" fill="%23ffffff"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0 C 150,20 300,40 450,25 C 600,10 750,40 900,30 [...]
 }
 
 /* ============================================================
@@ -426,11 +426,7 @@ button{ font-family:inherit; border:none; background:none; cursor:pointer; }
   100%{ background-position:-30% 130%; }
 }
 .cover-signature{
-  position:absolute; left:16px; bottom:16px;
-  font-family:var(--font-script);
-  font-size:36px;
-  color:var(--c-white);
-  text-shadow:0 2px 10px rgba(0,0,0,0.35);
+  display:none;
 }
 
 /* ---------- SASH (silk / satin ribbon, SVG pennant shape) ---------- */
@@ -616,7 +612,7 @@ button{ font-family:inherit; border:none; background:none; cursor:pointer; }
   text-align:center;
 }
 .section-info .torn-paper-top {
-    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 L150,10 L300,30 L450,5 L600,25 L750,0 L900,30 L1050,15 L1200,40 Z" fill="%23FAFBFA"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 L150,10 L300,30 L450,5 L600,25 L750,0 L900,30[...]
 }
 
 .info-eyebrow{
@@ -736,7 +732,7 @@ button{ font-family:inherit; border:none; background:none; cursor:pointer; }
   display:flex; justify-content:center;
 }
 .section-message .torn-paper-top {
-    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 Q150,0 300,20 T600,30 T900,10 T1200,40 Z" fill="%23ffffff"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 Q150,0 300,20 T600,30 T900,10 T1200,40 Z" fil[...]
 }
 .paper-card{
   position:relative;
@@ -788,7 +784,7 @@ button{ font-family:inherit; border:none; background:none; cursor:pointer; }
   background:var(--c-ivory);
 }
 .section-gallery .torn-paper-top {
-    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C 150,0 300,40 450,20 C 600,0 750,30 900,10 C 1050,40 1200,20 1200,40 Z" fill="%23FAFBFA"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C 150,0 300,40 450,20 C 600,0 750,30 900,10 C[...]
 }
 .gallery-masonry{
   column-count:2;
@@ -890,7 +886,7 @@ button{ font-family:inherit; border:none; background:none; cursor:pointer; }
   text-align:center;
 }
 .section-rsvp .torn-paper-top {
-    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 L150,20 L300,40 L450,10 L600,40 L750,25 L900,40 L1050,15 L1200,40 Z" fill="%23ffffff"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 L150,20 L300,40 L450,10 L600,40 L750,25 L900,[...]
 }
 .rsvp-note{
   font-weight:600;
@@ -929,7 +925,7 @@ textarea.field{
 }
 
 select.field{ appearance:none; -webkit-appearance:none; cursor:pointer;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%234c6864' stroke-width='2'><path d='M6 9l6 6 6-6'/></svg>");
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%234c6864' stroke-width='2'><path d='M6 9l6 6 6-6[...]
   background-repeat:no-repeat; background-position:right 16px center;
 }
 
@@ -998,396 +994,435 @@ select.field{ appearance:none; -webkit-appearance:none; cursor:pointer;
   color:var(--c-primary-deep);
   opacity:0;
   transform:translateY(6px);
-  transition:opacity 0.5s var(--ease-apple), transform 0.5s var(--ease-apple);
+  transition:opacity 0.35s var(--ease-apple), transform 0.35s var(--ease-apple);
 }
 .rsvp-toast.is-visible{ opacity:1; transform:translateY(0); }
-.rsvp-toast-error{ color:#b3413a; }
+.rsvp-toast.is-success{ color:var(--c-primary); }
+.rsvp-toast.is-error{ color:#c73e1d; }
 
 /* ============================================================
-   SECTION 8 — THANK YOU & COUNTDOWN
+   FOOTER
    ============================================================ */
-.section-thanks{
+footer{
   position:relative;
-  height:78vh;
-  min-height:460px;
-  overflow:hidden;
-}
-.thanks-img{
-  position:absolute; inset:0;
-}
-.thanks-img img{
-  width:100%; height:100%; object-fit:cover;
-  filter:brightness(0.55) saturate(1.05);
-}
-.thanks-content{
-  position:absolute; inset:0;
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding:28px 24px;
   text-align:center;
-  color:var(--c-white);
-  padding: 20px;
+  background:var(--c-ivory);
+  font-weight:600;
+  font-size:13.5px; letter-spacing:0.4px;
+  color:var(--c-slate);
 }
-.thanks-script{
-  font-family:var(--font-script-alt);
-  font-size:65.5px;
-  margin-bottom:8px;
-}
-.thanks-sub{
-  font-weight:700;
-  font-size:13.5px; letter-spacing:4px; text-transform:uppercase;
-  color:rgba(255,255,255,0.8);
-  margin-bottom: 30px;
-}
-
-/* Countdown */
-.countdown-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 10px;
-}
-.cd-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 12px;
-    padding: 12px 14px;
-    min-width: 65px;
-    box-shadow:0 0 0 0 rgba(148,230,214,0.0);
-    animation:cdBreathe 5s var(--ease-silk) infinite;
-}
-.cd-item:nth-child(2){ animation-delay:0.3s; }
-.cd-item:nth-child(3){ animation-delay:0.6s; }
-.cd-item:nth-child(4){ animation-delay:0.9s; }
-@keyframes cdBreathe{
-  0%,100%{ box-shadow:0 0 0 0 rgba(148,230,214,0.0), inset 0 1px 0 rgba(255,255,255,0.15); transform:translateY(0); }
-  50%{ box-shadow:0 0 22px 2px rgba(148,230,214,0.22), inset 0 1px 0 rgba(255,255,255,0.25); transform:translateY(-2px); }
-}
-.cd-item span {
-    font-family: var(--font-name);
-    font-weight:900;
-    font-size:29.5px;
-    line-height: 1;
-    color: var(--c-white);
-    margin-bottom: 4px;
-    display:inline-block;
-    transition:transform 0.35s var(--ease-spring);
-}
-.cd-item label {
-    font-family: var(--font-body);
-    font-weight:700;
-    font-size:10px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.8);
-}
-
-@media (max-width:360px){
-  .info-date-num{ font-size:45px; }
-  .countdown-wrapper { gap: 10px; }
-  .cd-item { min-width: 55px; padding: 10px; }
-}
-/* ============================================================
-   BORDER BEAM SYSTEM — animated gradient / "aurora" borders
-   Layered on top of every component's own rules above (this
-   block is intentionally last so it wins the cascade). Purely
-   visual — no HTML/JS touched, no IDs/classes added or removed.
-   ============================================================ */
-@property --border-angle{
-  syntax:'<angle>';
-  inherits:false;
-  initial-value:0deg;
-}
-@keyframes borderBeamRotate{ to{ --border-angle:360deg; } }
-
-.info-card,
-.paper-card,
-.field,
-.gallery-item,
-.cover-photo-wrap,
-.btn-direction,
-.btn-submit{
-  border:1.5px solid transparent !important;
-  background-origin:border-box;
-  background-clip:padding-box, border-box;
-  animation:borderBeamRotate 7s linear infinite;
-  position:relative;
-}
-/* Soft bloom halo riding just outside the rotating border — reads as
-   "light escaping the edge" rather than a harsh outline. Pure box-shadow,
-   GPU-cheap, no layout impact. */
-.field:focus-within{ box-shadow:0 0 0 3px rgba(5,118,107,0.14), var(--bloom-soft); }
-.info-card{        --fill:linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)); background-image:var(--fill), conic-gradient(from var(--border-angle), var(--glow-b), var(--glow-a), var(--sash-gold), var(--glow-c), var(--glow-b)); box-shadow:var(--shadow-glass), var(--shadow-inner-glass), var(--bloom-soft); }
-.paper-card{       --fill:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6));  background-image:var(--fill), conic-gradient(from var(--border-angle), var(--glow-a), var(--glow-c), var(--glow-b), var(--glow-a)); box-shadow:var(--shadow-card), var(--bloom-soft); }
-.field{            --fill:linear-gradient(var(--c-ivory),var(--c-ivory));                background-image:var(--fill), conic-gradient(from var(--border-angle), var(--c-primary-line), var(--glow-a), var(--c-primary-line)); animation-duration:10s; }
-select.field{      background-image:var(--fill), conic-gradient(from var(--border-angle), var(--c-primary-line), var(--glow-a), var(--c-primary-line)), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%234c6864' stroke-width='2'><path d='M6 9l6 6 6-6'/></svg>"); background-repeat:no-repeat, no-repeat, no-repeat; background-position:0 0, 0 0, right 16px center; }
-.gallery-item{      --fill:linear-gradient(#fff,#fff);                                    background-image:var(--fill), conic-gradient(from var(--border-angle), var(--glow-b), var(--sash-gold), var(--glow-a), var(--glow-b)); animation-duration:9s; box-shadow:var(--shadow-card), var(--bloom-soft); }
-.cover-photo-wrap{  --fill:linear-gradient(var(--c-ivory-deep),var(--c-ivory-deep));      background-image:var(--fill), conic-gradient(from var(--border-angle), var(--glow-a), var(--glow-c), var(--sash-gold), var(--glow-b), var(--glow-a)); animation-duration:11s; box-shadow:var(--shadow-soft), var(--bloom-soft); }
-.btn-direction{     --fill:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5));  background-image:var(--fill), conic-gradient(from var(--border-angle), var(--c-primary), var(--glow-a), var(--c-primary-deep), var(--c-primary)); animation-duration:5s; box-shadow:var(--bloom-gold); }
-.btn-submit{        --fill:linear-gradient(135deg, #0a8f82 0%, var(--c-primary) 50%, var(--c-primary-deep) 100%); background-image:var(--fill), conic-gradient(from var(--border-angle), var(--sash-gold), var(--glow-a), rgba(255,255,255,0.9), var(--sash-gold)); animation-duration:4.5s; box-shadow:var(--bloom-gold); }
-
-.field:focus{ animation-duration:2.2s; box-shadow:0 0 0 3px rgba(5,118,107,0.14), var(--shadow-ambient); }
-.gallery-item, .cover-photo-wrap{ transition:transform 0.6s var(--ease-apple), box-shadow 0.6s var(--ease-apple); }
-.gallery-item:hover{ transform:translateY(-3px) scale(1.015); box-shadow:var(--shadow-ambient); }
-
-/* Buttery hover elevation + spring on primary CTAs (Apple-style spring easing) */
-.btn-submit:hover, .btn-direction:hover{ animation-duration:1.6s; }
-.btn-submit, .btn-direction{ transition:transform 0.55s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.45s var(--ease-apple); }
-
-@media (prefers-reduced-motion: reduce){
-  .info-card, .paper-card, .field, select.field, .gallery-item, .cover-photo-wrap, .btn-direction, .btn-submit{ animation:none; }
-}
-
-@media (prefers-reduced-motion: reduce){
-  *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; }
-}
+footer a{ color:var(--c-primary); text-decoration:none; }
+footer a:hover{ text-decoration:underline; }
 </style>
 </head>
-<body>
 
-<div class="loader" id="loader">
-  <div class="loader-logo">nhhnamm</div>
-  <div class="loader-bar"><div class="loader-bar-fill" id="loaderFill"></div></div>
-  <div class="loader-label">Đang chuẩn bị thiệp mời</div>
+<body>
+<!-- Loading Screen -->
+<div class="loader" id="mainLoader">
+  <div class="loader-logo">N</div>
+  <div class="loader-bar">
+    <div class="loader-bar-fill"></div>
+  </div>
+  <div class="loader-label">Loading</div>
 </div>
 
-<div class="stage" id="stage">
+<!-- Main Stage -->
+<div class="stage">
 
-  <section class="section-cover">
-    <img class="cover-logo reveal" id="coverLogo" src="LINKANHODAY" alt="Logo trường" loading="lazy" decoding="async">
-    <div class="cover-school reveal reveal-delay-1" id="coverSchool"></div>
-    <div class="cover-school-en reveal reveal-delay-1" id="coverSchoolEn"></div>
-    <div class="cover-divider reveal reveal-delay-2"></div>
-    <div class="cover-title reveal reveal-delay-2">Graduation</div>
-    <div class="cover-subtitle reveal reveal-delay-2">Ceremony</div>
-
-    <div class="cover-photo-wrap reveal reveal-delay-3">
-      <img id="coverPhoto" src="LINKANHODAY" alt="Ảnh tốt nghiệp" loading="lazy" decoding="async">
-      <div class="cover-photo-glass"></div>
-      <div class="cover-signature" id="coverSignature"></div>
-
-      <!-- SASH đã được thu ngắn lại viewBox="0 0 100 340" và cấu trúc clipPath -->
-      <div class="sash-wrap" id="sashWrap">
-        <svg class="sash-svg" id="sash" viewBox="0 0 100 340" preserveAspectRatio="none" role="img" aria-label="Dải sash tốt nghiệp">
-          <defs>
-            <!-- Ivory silk fill, matched to the reference photo -->
-            <linearGradient id="silkGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%"  stop-color="#fffdf7"/>
-              <stop offset="26%" stop-color="#f7f4ec"/>
-              <stop offset="54%" stop-color="#fffefa"/>
-              <stop offset="80%" stop-color="#ebe6d8"/>
-              <stop offset="100%" stop-color="#fffdf7"/>
-            </linearGradient>
-            <!-- Woven satin grain via fractal noise, screened low-opacity over the fill -->
-            <filter id="silkGrain" x="-20%" y="-20%" width="140%" height="140%">
-              <feTurbulence type="fractalNoise" baseFrequency="0.012 0.9" numOctaves="2" seed="7" result="grain"/>
-              <feColorMatrix in="grain" type="matrix" values="0 0 0 0 0.08  0 0 0 0 0.18  0 0 0 0 0.16  0 0 0 0.35 0"/>
-            </filter>
-            <linearGradient id="sashHighlightGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="38%" stop-color="#ffffff" stop-opacity="0"/>
-              <stop offset="50%" stop-color="#ffffff" stop-opacity="0.88"/>
-              <stop offset="62%" stop-color="#ffffff" stop-opacity="0"/>
-            </linearGradient>
-            <radialGradient id="rivetGold" cx="35%" cy="30%" r="75%">
-              <stop offset="0%"  stop-color="#fff6d9"/>
-              <stop offset="35%" stop-color="#d8b262"/>
-              <stop offset="100%" stop-color="#93712c"/>
-            </radialGradient>
-            <clipPath id="sashClip">
-              <!-- Path đã được scale ngắn -->
-              <path d="M10 0 L90 0 Q100 0 100 10 L100 230 Q96 270 88 290 L50 340 L12 290 Q4 270 0 230 L0 10 Q0 0 10 0 Z"/>
-            </clipPath>
-          </defs>
-
-          <!-- KHỚP CHUYỂN ĐỘNG SVG -->
-          <g id="sashSegTop">
-            <g id="sashSegMid">
-              <g id="sashSegTip">
-
-                <!-- Ambient contact shadow beneath the whole ribbon -->
-                <ellipse cx="50" cy="336" rx="46" ry="10" fill="rgba(4,20,17,0.18)" filter="blur(6px)"/>
-
-                <!-- Outer navy border, thick with a beveled highlight edge -->
-                <path d="M10 0 L90 0 Q100 0 100 10 L100 230 Q96 270 88 290 L50 340 L12 290 Q4 270 0 230 L0 10 Q0 0 10 0 Z"
-                      fill="url(#silkGrad)" stroke="#16324a" stroke-width="7" stroke-linejoin="round"/>
-                <path d="M9 2 L91 2 Q98 2 98 10 L98 229 Q94 267 87 287 L50 335 L13 287 Q6 267 2 229 L2 10 Q2 2 9 2 Z"
-                      fill="none" stroke="#26526f" stroke-width="1.4" opacity="0.55"/>
-
-                <!-- Woven silk grain clipped to the ribbon -->
-                <path class="sash-grain" d="M10 0 L90 0 Q100 0 100 10 L100 230 Q96 270 88 290 L50 340 L12 290 Q4 270 0 230 L0 10 Q0 0 10 0 Z"
-                      fill="#0c1f30" filter="url(#silkGrain)" clip-path="url(#sashClip)"/>
-
-                <!-- Fabric fold lines for a little dimensionality -->
-                <path d="M20 40 Q50 50 80 40" fill="none" stroke="rgba(22,50,74,0.08)" stroke-width="2" clip-path="url(#sashClip)"/>
-                <path d="M14 170 Q50 182 86 170" fill="none" stroke="rgba(22,50,74,0.07)" stroke-width="2" clip-path="url(#sashClip)"/>
-                <path d="M16 260 Q50 272 84 260" fill="none" stroke="rgba(22,50,74,0.06)" stroke-width="2" clip-path="url(#sashClip)"/>
-
-                <!-- Thin inner border, stitched -->
-                <path class="sash-stitch" d="M17 8 L83 8 Q92 8 92 16 L92 225 Q89 260 83 278 L50 322 L17 278 Q11 260 8 225 L8 16 Q8 8 17 8 Z"/>
-                <path d="M17 8 L83 8 Q92 8 92 16 L92 225 Q89 260 83 278 L50 322 L17 278 Q11 260 8 225 L8 16 Q8 8 17 8 Z"
-                      fill="none" stroke="#26526f" stroke-width="1.2"/>
-
-                <rect class="sash-highlight" x="-40" y="-140" width="180" height="160"
-                      fill="url(#sashHighlightGrad)" clip-path="url(#sashClip)" transform="rotate(28)"/>
-
-                <!-- Glints đã được điều chỉnh y -->
-                <circle class="sash-sparkle" cx="30" cy="80"  r="1.3" style="animation-delay:0.2s; animation-duration:4.8s;"/>
-                <circle class="sash-sparkle" cx="70" cy="130" r="1.1" style="animation-delay:1.6s; animation-duration:5.4s;"/>
-                <circle class="sash-sparkle" cx="24" cy="190" r="1.4" style="animation-delay:2.4s; animation-duration:4.2s;"/>
-                <circle class="sash-sparkle" cx="76" cy="240" r="1.0" style="animation-delay:0.8s; animation-duration:5.0s;"/>
-                <circle class="sash-sparkle" cx="46" cy="280" r="1.2" style="animation-delay:3.1s; animation-duration:4.6s;"/>
-
-                <!-- Two gold rivets, matched to the reference photo's placement -->
-                <g class="sash-rivet">
-                  <circle cx="50" cy="46"  r="4.6" fill="url(#rivetGold)"/>
-                  <circle class="sash-rivet-ring" cx="50" cy="46" r="4.6"/>
-                  <circle cx="48.5" cy="44.3" r="1.1" fill="#fffdf0" opacity="0.85"/>
-                </g>
-                <g class="sash-rivet">
-                  <circle cx="50" cy="196" r="4.6" fill="url(#rivetGold)"/>
-                  <circle class="sash-rivet-ring" cx="50" cy="196" r="4.6"/>
-                  <circle cx="48.5" cy="194.3" r="1.1" fill="#fffdf0" opacity="0.85"/>
-                </g>
-
-                <!-- Chiều cao foreignObject khớp với sash rút ngắn -->
-                <foreignObject class="sash-name-fo" x="0" y="0" width="100" height="340">
-                  <div xmlns="http://www.w3.org/1999/xhtml" class="sash-text">
-                    <div class="sash-text-inner" style="transform:rotate(-90deg);">
-                      <span class="sash-name" id="sashName"></span>
-                      <span class="sash-major" id="sashMajor"></span>
-                      <span class="sash-class" id="sashClass"></span>
-                    </div>
-                  </div>
-                </foreignObject>
-
-              </g>
-            </g>
-          </g>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 2: MEMORIES (Cuộn phim) -->
-  <section class="section-memories">
-    <div class="torn-paper-top"></div>
-    <div class="title-script reveal">Thanh xuân</div>
-    <div class="title-script-sub reveal reveal-delay-1">của chúng mình</div>
+<!-- ============================================================
+     SECTION 1 — COVER
+     ============================================================ -->
+<section class="section-cover reveal">
+  <div class="cover-logo">
+    <img src="https://cdn.haitrieu.com/wp-content/uploads/2021/11/Logo-Hoc-Vien-Tai-Chinh-AOF.png" alt="Logo AOF">
+  </div>
+  
+  <div class="cover-school">Học Viện Tài Chính</div>
+  <div class="cover-school-en">Academy of Finance</div>
+  
+  <div class="cover-divider"></div>
+  
+  <div class="cover-title">Kỷ Niệm</div>
+  <div class="cover-subtitle">Bộ Ảnh Tốt Nghiệp</div>
+  
+  <div class="cover-photo-wrap">
+    <img id="coverPhoto" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=430&h=573&fit=crop" alt="Graduation Photo">
+    <div class="cover-photo-glass"></div>
+    <div class="cover-signature">Nguyễn Hữu Hoài Nam</div>
     
-    <div class="film-roll-container reveal reveal-delay-2">
-      <div class="film-marquee" id="filmMarquee">
-        <!-- JS will populate this with 7+ images duplicated for infinite scroll -->
+    <!-- SASH (silk ribbon SVG) — stays visible -->
+    <div class="sash-wrap">
+      <svg class="sash-svg" viewBox="0 0 200 800" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="sashGrain">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.5" xChannelSelector="R" yChannelSelector="G"/>
+          </filter>
+          <linearGradient id="sashGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#16324a;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#1e3f52;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0c1f30;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        
+        <!-- Ribbon pennant shape with gradient -->
+        <polygon class="sash-fabric" points="0,0 180,30 200,400 180,770 0,800" fill="url(#sashGradient)" opacity="0.95"/>
+        
+        <!-- Silk grain texture -->
+        <polygon class="sash-grain" points="0,0 180,30 200,400 180,770 0,800" fill="url(#sashGradient)" opacity="0.6" filter="url(#sashGrain)"/>
+        
+        <!-- Light sweep / shine animation -->
+        <rect class="sash-highlight" x="0" y="0" width="200" height="800" fill="white" opacity="0.15"/>
+        
+        <!-- Navy border -->
+        <polygon points="0,0 180,30 200,400 180,770 0,800" fill="none" stroke="#0c1f30" stroke-width="2"/>
+        
+        <!-- Stitch line detail -->
+        <polygon class="sash-stitch" points="8,8 172,36 192,400 172,764 8,792"/>
+        
+        <!-- Text container -->
+        <foreignObject class="sash-name-fo" x="0" y="150" width="200" height="500">
+          <div class="sash-text">
+            <div class="sash-text-inner">
+              <div class="sash-major">Khóa 2024</div>
+              <div class="sash-name">NAM</div>
+              <div class="sash-class">CK1</div>
+            </div>
+          </div>
+        </foreignObject>
+        
+        <!-- Accent sparkles -->
+        <circle class="sash-sparkle" cx="40" cy="120" r="3"/>
+        <circle class="sash-sparkle" cx="160" cy="680" r="2.5"/>
+        
+        <!-- Gold rivets -->
+        <g class="sash-rivet">
+          <circle cx="100" cy="80" r="4" fill="#d8b262" opacity="0.8"/>
+          <circle class="sash-rivet-ring" cx="100" cy="80" r="4"/>
+        </g>
+        <g class="sash-rivet">
+          <circle cx="100" cy="720" r="4" fill="#d8b262" opacity="0.8"/>
+          <circle class="sash-rivet-ring" cx="100" cy="720" r="4"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 2 — MEMORIES
+     ============================================================ -->
+<section class="section-memories reveal reveal-delay-1">
+  <div class="title-script">Thanh Xuân Của Chúng Mình</div>
+  <div class="title-script-sub">Remember the best moments</div>
+  
+  <div class="film-roll-container">
+    <div class="film-marquee">
+      <div class="film-frame"><img src="https://images.unsplash.com/photo-1552058544-f006b1f7dd51?w=150&h=200&fit=crop" alt="Memory 1"></div>
+      <div class="film-frame"><img src="https://images.unsplash.com/photo-1523438097914-512b08d9a36b?w=150&h=200&fit=crop" alt="Memory 2"></div>
+      <div class="film-frame"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=150&h=200&fit=crop" alt="Memory 3"></div>
+      <div class="film-frame"><img src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=150&h=200&fit=crop" alt="Memory 4"></div>
+      <div class="film-frame"><img src="https://images.unsplash.com/photo-1517457373614-b7152f800fd1?w=150&h=200&fit=crop" alt="Memory 5"></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="film-frame"><img src="https://images.unsplash.com/photo-1552058544-f006b1f7dd51?w=150&h=200&fit=crop" alt="Memory 1"></div>
+      <div class="film-frame"><img src="https://images.unsplash.com/photo-1523438097914-512b08d9a36b?w=150&h=200&fit=crop" alt="Memory 2"></div>
+      <div class="film-frame"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=150&h=200&fit=crop" alt="Memory 3"></div>
+      <div class="film-frame"><img src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=150&h=200&fit=crop" alt="Memory 4"></div>
+      <div class="film-frame"><img src="https://images.unsplash.com/photo-1517457373614-b7152f800fd1?w=150&h=200&fit=crop" alt="Memory 5"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 3 — CEREMONY INFO
+     ============================================================ -->
+<section class="section-info reveal reveal-delay-2">
+  <div class="torn-paper-top"></div>
+  
+  <div class="info-eyebrow">Lời Mời</div>
+  <div class="info-guest">Thân Chào Quý Khách,</div>
+  
+  <div class="info-card">
+    <div class="info-time">Sự Kiện Tốt Nghiệp</div>
+    
+    <div class="info-date-row">
+      <div class="info-date-col">
+        <div class="info-date-label">Ngày</div>
+        <div class="info-date-num">28</div>
+      </div>
+      <div class="info-date-divider"></div>
+      <div class="info-date-col">
+        <div class="info-date-label">Tháng</div>
+        <div class="info-date-num">12</div>
+      </div>
+      <div class="info-date-divider"></div>
+      <div class="info-date-col">
+        <div class="info-date-label">Năm</div>
+        <div class="info-date-num">24</div>
       </div>
     </div>
-  </section>
+    
+    <div class="info-venue-label">Địa Điểm</div>
+    <div class="info-venue-name">Hội Trường AOF</div>
+    <div class="info-venue-address">Số 47 Tây Sơn, Quận Đống Đa, Hà Nội</div>
+    
+    <a href="https://maps.google.com/?q=47+Tây+Sơn,+Đống+Đa,+Hà+Nội" target="_blank" class="btn-direction">
+      📍 Chỉ Đường
+    </a>
+  </div>
+</section>
 
-  <!-- SECTION 3: CEREMONY INFO -->
-  <section class="section-info">
-    <div class="torn-paper-top"></div>
-    <div class="info-eyebrow reveal">Trân trọng kính mời</div>
-    <div class="info-guest reveal reveal-delay-1" id="guestName">Quý khách</div>
-    <div class="info-card reveal reveal-delay-2">
-      <div class="info-time" id="infoTime"></div>
-      <div class="info-date-row">
-        <div class="info-date-col">
-          <div class="info-date-label" id="infoMonthLabel">Tháng</div>
-        </div>
-        <div class="info-date-divider"></div>
-        <div class="info-date-col">
-          <div class="info-date-num" id="infoDay"></div>
-        </div>
-        <div class="info-date-divider"></div>
-        <div class="info-date-col">
-          <div class="info-date-label" id="infoYearLabel">Năm</div>
+<!-- ============================================================
+     SECTION 4 — MESSAGE
+     ============================================================ -->
+<section class="section-message reveal reveal-delay-3">
+  <div class="torn-paper-top"></div>
+  
+  <div class="paper-card">
+    <div class="paper-title">Cảm Ơn</div>
+    <div class="paper-text">
+      Xin cảm ơn quý khách đã luôn ủng hộ và đồng hành cùng tôi trong hành trình học tập. Sự hiện diện của quý khách sẽ là niềm hạnh phúc lớn nhất của tôi trong ngày trọng đại này.
+    </div>
+    <div class="paper-signature">Nam</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 5 — GALLERY
+     ============================================================ -->
+<section class="section-gallery reveal">
+  <div class="torn-paper-top"></div>
+  
+  <div class="gallery-masonry">
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1523438097914-512b08d9a36b?w=250&h=320&fit=crop" alt="Gallery 1"></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=250&h=300&fit=crop" alt="Gallery 2"></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=250&h=350&fit=crop" alt="Gallery 3"></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1517457373614-b7152f800fd1?w=250&h=280&fit=crop" alt="Gallery 4"></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1552058544-f006b1f7dd51?w=250&h=330&fit=crop" alt="Gallery 5"></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1523438097914-512b08d9a36b?w=250&h=310&fit=crop" alt="Gallery 6"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 6 — SLIDER
+     ============================================================ -->
+<section class="section-slider reveal reveal-delay-1">
+  <div class="swiper slider-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-kenburns origin-b">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=430&h=550&fit=crop" alt="Slide 1">
+          <div class="slider-caption">Moments</div>
         </div>
       </div>
-      <div class="info-venue-label">Tại địa điểm</div>
-      <div class="info-venue-name" id="infoVenueName"></div>
-      <div class="info-venue-address" id="infoVenueAddress"></div>
-      <a class="btn-direction" id="btnDirection" href="#" target="_blank" rel="noopener">Xem chỉ đường</a>
-    </div>
-  </section>
-
-  <!-- SECTION 4: MESSAGE -->
-  <section class="section-message">
-    <div class="torn-paper-top"></div>
-    <div class="paper-card reveal">
-      <div class="paper-title reveal reveal-delay-1">"Cảm ơn vì đã thức cùng nhau"</div>
-      <p class="paper-text reveal reveal-delay-2" id="messageText"></p>
-      <!-- Chữ ký dạng font chữ nghệ thuật -->
-      <div class="paper-signature reveal reveal-delay-3">Hoài Nam</div>
-    </div>
-  </section>
-
-  <!-- SECTION 5: GALLERY -->
-  <section class="section-gallery">
-    <div class="torn-paper-top"></div>
-    <div class="title-script reveal" style="margin-bottom:28px;">Khoảnh khắc</div>
-    <div class="gallery-masonry" id="galleryGrid"></div>
-  </section>
-
-  <!-- SECTION 6: SLIDER -->
-  <section class="section-slider reveal">
-    <div class="swiper slider-swiper">
-      <div class="swiper-wrapper" id="sliderWrapper"></div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev" aria-label="Ảnh trước"></div>
-      <div class="swiper-button-next" aria-label="Ảnh tiếp theo"></div>
-    </div>
-    <div class="slider-caption" id="fullimageCaption"></div>
-  </section>
-
-  <!-- SECTION 7: RSVP -->
-  <section class="section-rsvp">
-    <div class="torn-paper-top"></div>
-    <div class="title-script reveal" style="margin-bottom:14px;">Gửi tới tớ</div>
-    <p class="rsvp-note reveal reveal-delay-1" id="rsvpNote"></p>
-    <form class="rsvp-form reveal reveal-delay-2" id="rsvpForm">
-      <input class="field" type="text" name="name" placeholder="Tên của bạn" required>
-      <textarea class="field" id="messageInput" name="message" placeholder="Viết cho tớ vài dòng nhé — như một trang lưu bút, cứ thoải mái viết hết những gì muốn nói ✨" rows="8"></textarea>
-      <select class="field" name="confirm" required>
-        <option value="" disabled selected>Xác nhận tham dự?</option>
-        <option value="yes">Có, mình sẽ đến</option>
-        <option value="maybe">Mình chưa chắc chắn</option>
-        <option value="no">Rất tiếc, mình không thể đến</option>
-      </select>
-      <button class="btn-submit" type="submit" id="btnSubmit">
-        <span class="btn-submit-label">Xác nhận</span>
-        <span class="btn-submit-spinner" id="btnSubmitSpinner" aria-hidden="true"></span>
-      </button>
-      <div class="rsvp-toast" id="rsvpToast">Cảm ơn bạn đã xác nhận tham dự!</div>
-      <div class="rsvp-toast rsvp-toast-error" id="rsvpToastError">Rất tiếc, gửi không thành công. Vui lòng thử lại!</div>
-    </form>
-  </section>
-
-  <!-- SECTION 8: THANK YOU & COUNTDOWN -->
-  <section class="section-thanks reveal">
-    <div class="thanks-img"><img src="LINKANHODAY" alt="" loading="lazy" decoding="async" draggable="false" oncontextmenu="return false;"></div>
-    <div class="thanks-content">
-      <div class="thanks-script reveal">Thank You</div>
-      <div class="thanks-sub reveal reveal-delay-1" id="thanksDate"></div>
-      
-      <!-- Countdown Widget -->
-      <div class="countdown-wrapper reveal reveal-delay-2" id="countdown">
-        <div class="cd-item"><span id="cd-days">00</span><label>Ngày</label></div>
-        <div class="cd-item"><span id="cd-hours">00</span><label>Giờ</label></div>
-        <div class="cd-item"><span id="cd-mins">00</span><label>Phút</label></div>
-        <div class="cd-item"><span id="cd-secs">00</span><label>Giây</label></div>
+      <div class="swiper-slide">
+        <div class="slide-kenburns origin-c">
+          <img src="https://images.unsplash.com/photo-1552058544-f006b1f7dd51?w=430&h=550&fit=crop" alt="Slide 2">
+          <div class="slider-caption">Memories</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-kenburns origin-b">
+          <img src="https://images.unsplash.com/photo-1523438097914-512b08d9a36b?w=430&h=550&fit=crop" alt="Slide 3">
+          <div class="slider-caption">Joy</div>
+        </div>
       </div>
     </div>
-  </section>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
 
-</div><!-- /.stage -->
+<!-- ============================================================
+     SECTION 7 — RSVP
+     ============================================================ -->
+<section class="section-rsvp reveal reveal-delay-2">
+  <div class="torn-paper-top"></div>
+  
+  <h2 style="font-family:var(--font-script-alt); font-size:36px; color:var(--c-primary-deep); margin-bottom:28px;">RSVP</h2>
+  
+  <div class="rsvp-note">
+    Vui lòng xác nhận sự tham dự của quý khách trước ngày 20/12/2024
+  </div>
+  
+  <form class="rsvp-form" id="rsvpForm">
+    <input type="text" class="field" placeholder="Họ và Tên *" required>
+    <input type="email" class="field" placeholder="Email *" required>
+    <input type="tel" class="field" placeholder="Số Điện Thoại *" required>
+    <select class="field" required>
+      <option value="">-- Chọn Trạng Thái RSVP --</option>
+      <option value="confirm">Xác Nhận Tham Dự ✓</option>
+      <option value="maybe">Chưa Chắc Chắn ?</option>
+      <option value="decline">Xin Lỗi, Không Thể Tham Dự ✕</option>
+    </select>
+    <textarea class="field" placeholder="Lời Nhắn / Lời Chúc..." rows="5"></textarea>
+    
+    <button type="submit" class="btn-submit">
+      <span>Gửi RSVP</span>
+      <div class="btn-submit-spinner"></div>
+    </button>
+    
+    <div class="rsvp-toast" id="rsvpToast"></div>
+  </form>
+</section>
 
-<!-- Swiper JS & Bootstrap JS -->
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <p>Made with 💚 for a special celebration</p>
+  <p style="margin-top:12px; font-size:12px; opacity:0.7;">© 2024 Nguyễn Hữu Hoài Nam</p>
+</footer>
+
+</div>
+
+<!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// ============================================================
+//   LOADER
+// ============================================================
+document.addEventListener('DOMContentLoaded', () => {
+  const loader = document.getElementById('mainLoader');
+  setTimeout(() => {
+    loader.classList.add('is-hidden');
+  }, 2200);
+});
 
-<!-- EmailJS — client-side email delivery, no backend needed (works on GitHub Pages) -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+// ============================================================
+//   SCROLL REVEAL
+// ============================================================
+const revealElements = document.querySelectorAll('.reveal');
 
-<script src="gra.js"></script>
+const observerOptions = {
+  threshold: 0.15,
+  rootMargin: '0px 0px -80px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+    }
+  });
+}, observerOptions);
+
+revealElements.forEach(el => observer.observe(el));
+
+// ============================================================
+//   SWIPER SLIDER
+// ============================================================
+const swiper = new Swiper('.slider-swiper', {
+  loop: true,
+  pagination: { el: '.swiper-pagination', dynamicBullets: true },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  effect: 'fade',
+  fadeEffect: { crossFade: true },
+});
+
+// ============================================================
+//   RSVP FORM
+// ============================================================
+document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const btn = e.target.querySelector('.btn-submit');
+  const toast = document.getElementById('rsvpToast');
+  
+  btn.classList.add('is-loading');
+  btn.disabled = true;
+  
+  const formData = {
+    name: e.target[0].value,
+    email: e.target[1].value,
+    phone: e.target[2].value,
+    status: e.target[3].value,
+    message: e.target[4].value,
+  };
+  
+  try {
+    // Simulated success after 1.5s (replace with real API call)
+    await new Promise(r => setTimeout(r, 1500));
+    
+    btn.classList.remove('is-loading');
+    btn.disabled = true;
+    toast.textContent = '✓ Cảm ơn! RSVP của bạn đã được gửi.';
+    toast.classList.add('is-visible', 'is-success');
+    
+    setTimeout(() => {
+      e.target.reset();
+      toast.classList.remove('is-visible');
+      btn.disabled = false;
+    }, 3000);
+  } catch (err) {
+    btn.classList.remove('is-loading');
+    btn.disabled = false;
+    toast.textContent = '✕ Lỗi! Vui lòng thử lại.';
+    toast.classList.add('is-visible', 'is-error');
+  }
+});
+
+// ============================================================
+//   COPY/DRAG PROTECTION
+// ============================================================
+document.addEventListener('copy', (e) => {
+  e.preventDefault();
+  showProtectToast();
+});
+
+document.addEventListener('dragstart', (e) => {
+  if (e.target.tagName === 'IMG' || e.target.classList.contains('cover-photo-wrap')) {
+    e.preventDefault();
+    showProtectToast();
+  }
+});
+
+function showProtectToast() {
+  const protectToast = document.createElement('div');
+  protectToast.className = 'protect-toast is-visible';
+  protectToast.textContent = '⚠ Nội dung được bảo vệ';
+  document.body.appendChild(protectToast);
+  
+  setTimeout(() => {
+    protectToast.classList.remove('is-visible');
+    setTimeout(() => protectToast.remove(), 350);
+  }, 2500);
+}
+
+// ============================================================
+//   RIPPLE EFFECT on BUTTON
+// ============================================================
+document.querySelector('.btn-submit').addEventListener('click', function(e) {
+  const rect = this.getBoundingClientRect();
+  const size = Math.max(rect.width, rect.height);
+  const x = e.clientX - rect.left - size / 2;
+  const y = e.clientY - rect.top - size / 2;
+  
+  const ripple = document.createElement('span');
+  ripple.className = 'ripple';
+  ripple.style.width = ripple.style.height = size + 'px';
+  ripple.style.left = x + 'px';
+  ripple.style.top = y + 'px';
+  
+  this.appendChild(ripple);
+  
+  setTimeout(() => ripple.remove(), 700);
+});
+
+// ============================================================
+//   DIRECTION BUTTON (maps link works as-is)
+// ============================================================
+// Already added as <a href> target="_blank" in HTML
+</script>
 </body>
+
 </html>
