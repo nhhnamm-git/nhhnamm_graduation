@@ -114,6 +114,18 @@ img{
   -webkit-touch-callout:none;
   pointer-events:none;
 }
+/* Ảnh chưa kịp nạp / đang chờ JS gán src: nền dịu thay vì trống trắng */
+img:not([src]){ opacity:0; }
+/* Ảnh lỗi thật sự sau khi đã thử mọi biến thể tên file (case-insensitive):
+   ẩn icon "ảnh vỡ" xấu xí của trình duyệt, hiện khung gradient nhẹ nhàng thay thế. */
+.img-missing{ position:relative; background:linear-gradient(135deg, var(--c-subtle), var(--c-ivory-deep)); }
+.img-missing img{ display:none; }
+.img-missing::after{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(5,118,107,0.14), transparent 60%);
+}
 /* cho phép click thật sự cần thiết (nút, link, slider) vẫn hoạt động bình thường
    vì các phần tử đó không phải <img> — chỉ ảnh mới bị khoá tương tác */
 .watermark-tag{
@@ -598,6 +610,96 @@ a, .field{ touch-action:manipulation; }
 }
 .film-frame img {
     width: 100%; height: 100%; object-fit: cover; object-position: center;
+}
+
+/* ============================================================
+   SECTION 1.5 — TIMELINE ("Hành trình thanh xuân")
+   ============================================================ */
+.section-timeline{
+  position:relative;
+  padding:70px 26px 56px;
+  background:
+    radial-gradient(circle at 88% 6%, var(--c-subtle) 0%, transparent 55%),
+    var(--c-ivory);
+}
+.section-timeline .torn-paper-top{
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C 150,20 300,0 450,15 C 600,30 750,0 900,10 C 1050,20 1200,5 1200,40 Z" fill="%23FAFBFA"/></svg>');
+}
+.timeline-intro{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-style:italic;
+  font-size:16.5px;
+  line-height:1.75;
+  text-align:center;
+  color:var(--c-slate);
+  max-width:300px;
+  margin:0 auto 46px;
+}
+.timeline-list{
+  position:relative;
+  padding-left:30px;
+}
+.timeline-list::before{
+  content:"";
+  position:absolute;
+  left:9px; top:8px; bottom:8px;
+  width:2px;
+  background:linear-gradient(to bottom, transparent, var(--c-primary) 8%, var(--c-primary) 92%, transparent);
+  opacity:0.45;
+}
+.timeline-item{
+  position:relative;
+  margin-bottom:24px;
+}
+.timeline-item:last-child{ margin-bottom:0; }
+.timeline-dot{
+  position:absolute;
+  left:-30px; top:9px;
+  width:19px; height:19px;
+  border-radius:50%;
+  background:var(--c-white);
+  border:3px solid var(--c-primary);
+  box-shadow:0 0 0 4px var(--c-subtle), var(--bloom-soft);
+  z-index:2;
+}
+.timeline-card{
+  position:relative;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(5,118,107,0.05), transparent 60%),
+    rgba(255,255,255,0.62);
+  backdrop-filter:blur(18px) saturate(140%);
+  -webkit-backdrop-filter:blur(18px) saturate(140%);
+  border:1px solid rgba(255,255,255,0.65);
+  border-radius:var(--radius-card-sm);
+  box-shadow:var(--shadow-card);
+  padding:20px 22px 22px;
+  transition:transform 0.5s var(--ease-apple), box-shadow 0.5s var(--ease-apple);
+}
+.timeline-card:active{ transform:scale(0.98); }
+.timeline-date{
+  font-family:var(--font-body);
+  font-weight:700;
+  font-size:12px;
+  letter-spacing:1.6px;
+  color:var(--c-primary);
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.timeline-title{
+  font-family:var(--font-name);
+  font-weight:800;
+  font-size:18.5px;
+  color:var(--c-primary-deep);
+  line-height:1.35;
+  margin-bottom:9px;
+}
+.timeline-desc{
+  font-family:var(--font-body);
+  font-weight:400;
+  font-size:13.5px;
+  line-height:1.75;
+  color:var(--c-slate);
 }
 
 /* ============================================================
@@ -1152,7 +1254,7 @@ select.field{      background-image:var(--fill), conic-gradient(from var(--borde
 <div class="stage" id="stage">
 
   <section class="section-cover">
-    <img class="cover-logo reveal" id="coverLogo" src="LINKANHODAY" alt="Logo trường" loading="lazy" decoding="async">
+    <img class="cover-logo reveal" id="coverLogo" alt="Logo trường" loading="lazy" decoding="async">
     <div class="cover-school reveal reveal-delay-1" id="coverSchool"></div>
     <div class="cover-school-en reveal reveal-delay-1" id="coverSchoolEn"></div>
     <div class="cover-divider reveal reveal-delay-2"></div>
@@ -1160,7 +1262,7 @@ select.field{      background-image:var(--fill), conic-gradient(from var(--borde
     <div class="cover-subtitle reveal reveal-delay-2">Ceremony</div>
 
     <div class="cover-photo-wrap reveal reveal-delay-3">
-      <img id="coverPhoto" src="LINKANHODAY" alt="Ảnh tốt nghiệp" loading="lazy" decoding="async">
+      <img id="coverPhoto" alt="Ảnh tốt nghiệp" loading="lazy" decoding="async">
       <div class="cover-photo-glass"></div>
 
       <!-- SASH đã được thu ngắn lại viewBox="0 0 100 340" và cấu trúc clipPath -->
@@ -1265,6 +1367,17 @@ select.field{      background-image:var(--fill), conic-gradient(from var(--borde
     </div>
   </section>
 
+  <!-- SECTION 1.5: TIMELINE (Hành trình thanh xuân) -->
+  <section class="section-timeline">
+    <div class="torn-paper-top"></div>
+    <div class="title-script reveal">Hành trình</div>
+    <div class="title-script-sub reveal reveal-delay-1">thanh xuân</div>
+    <p class="timeline-intro reveal reveal-delay-1">Điểm lại những dấu mốc rực rỡ và đong đầy cảm xúc trong suốt quãng đời sinh viên</p>
+    <div class="timeline-list" id="timelineList">
+      <!-- JS sẽ render các mốc thời gian tại đây -->
+    </div>
+  </section>
+
   <!-- SECTION 2: MEMORIES (Cuộn phim) -->
   <section class="section-memories">
     <div class="torn-paper-top"></div>
@@ -1359,7 +1472,7 @@ select.field{      background-image:var(--fill), conic-gradient(from var(--borde
 
   <!-- SECTION 8: THANK YOU & COUNTDOWN -->
   <section class="section-thanks reveal">
-    <div class="thanks-img"><img src="LINKANHODAY" alt="" loading="lazy" decoding="async" draggable="false" oncontextmenu="return false;"></div>
+    <div class="thanks-img"><img alt="" loading="lazy" decoding="async" draggable="false" oncontextmenu="return false;"></div>
     <div class="thanks-content">
       <div class="thanks-script reveal">Thank You</div>
       <div class="thanks-sub reveal reveal-delay-1" id="thanksDate"></div>
