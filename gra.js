@@ -118,8 +118,8 @@ const timeline = [
   },
   {
     date: "18/05/2025",
-    title: "Festival Chuyển đổi số — Giải Quán quân",
-    desc: "Tham gia Festival \"Chuyển đổi số\" và xuất sắc giành giải Quán quân, dấu ấn đáng tự hào của một năm nhiều nỗ lực."
+    title: "Festival Chuyển đổi số — Giải Quý quân",
+    desc: "Tham gia Festival \"Chuyển đổi số\" và xuất sắc giành giải Quý quân, dấu ấn đáng tự hào của một năm nhiều nỗ lực."
   },
   {
     date: "05/08/2025",
