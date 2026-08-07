@@ -74,7 +74,7 @@ const invitation = {
   venueName:   "HỘI TRƯỜNG 700 - HỌC VIỆN TÀI CHÍNH",
   venueAddress:"Số 58, Lê Văn Hiến, Đức Thắng, Hà Nội",
   directionUrl:"https://maps.app.goo.gl/fiWh6k8vfyEP1pacA",
-  message: "Tài chính đến với mình như một cơ hội, mang theo rất nhiều điều để học, để lớn lên. Hoá ra những áp lực từng trải qua cũng chỉ tóm gọn trong tiếng thở dài trôi đi mất, chỉ có trải nghiệm và sự mạnh mẽ là ở lại. Mong rằng mỗi chúng ta hôm nay hay muôn ngày sau vẫn sẽ sống đời kiêu hãnh có khiêm nhường, hạnh phúc có bình an. Mong cho chúng ta dù có khó khăn thế nào thì vẫn luôn kiên cường vượt qua, chân cứng đá mền vượt qua chông gai và đặc biệt luôn là những người tử tế.",
+  message: "Tài chính đến với tớ như một cơ hội, một duyên lành, mang theo rất nhiều điều để học, để trưởng thành hơn. Hoá ra 4 năm đại học trôi qua quá nhanh, tớ đã có một thanh xuân đáng nhớ tại Tài chính, có những người bạn thực sự chân thành, cùng nhau chia sẻ từ học tập, công việc đến cuộc sống. Cảm ơn Tài chính đã cho tớ những trải nghiệm đáng nhớ, đặc biệt tớ dần hiểu mọi khó khăn sẽ dần được an bài một cách tự nhiên nhất, hy vọng mỗi chúng ta sẽ "bình tâm" vượt qua những thử thách và luôn tin vào sự sắp xếp hoàn hảo mà ông trời đã đặt ra cho chúng. Hy vọng mỗi chúng ta luôn cố gắng, nỗ lực theo đuổi những mục tiêu sống của bản thân và thật bình an, như vậy là đủ rồi, gửi cậu: "Save the best for last" câu nói tớ thích nhất!",
   rsvpNote: "Vui lòng xác nhận sự tham dự của bạn để mình chuẩn bị đón tiếp một cách chu đáo nhất. Trân trọng cảm ơn!",
   fullImageCaption: "Học viện Tài chính"
 };
