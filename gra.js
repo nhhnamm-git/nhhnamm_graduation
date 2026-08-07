@@ -80,7 +80,7 @@ const invitation = {
 };
 
 /* ============================================================
-   TIMELINE — "Hành trình thanh xuân"
+   TIMELINE — "Bốn năm đại học của tớ"
    Danh sách các dấu mốc trong suốt quãng đời sinh viên.
    Những mốc chưa có mô tả gốc đã được viết bổ sung để đầy đủ
    cảm xúc và dễ nhớ hơn.
@@ -114,27 +114,27 @@ const timeline = [
   {
     date: "20/09/2024",
     title: "Học bổng khuyến khích học tập — Lần 1",
-    desc: "Manifest thành công học bổng khuyến khích học tập lần đầu tiên, thành quả xứng đáng cho một hành trình miệt mài trên giảng đường."
+    desc: "Manifest thành công học bổng khuyến khích học tập lần đầu tiên, hắn ta bất ngờ vì được học bổng."
   },
   {
     date: "18/05/2025",
     title: "Festival Chuyển đổi số — Giải Quý quân",
-    desc: "Tham gia Festival \"Chuyển đổi số\" và xuất sắc giành giải Quý quân, dấu ấn đáng tự hào của một năm nhiều nỗ lực."
+    desc: "Tham gia Festival \"Chuyển đổi số\" và xuất sắc giành giải Quý quân, cuộc thi học thuật đầu tiên và duy nhất của cuộc đời sinh viên hắn ta."
   },
   {
     date: "05/08/2025",
     title: "NCKH gặt hái thành quả",
-    desc: "Hoàn thành công trình nghiên cứu khoa học, đạt giải Nhì cấp Khoa và giải Ba cấp Học viện — trái ngọt cho những đêm miệt mài cùng số liệu."
+    desc: "Hoàn thành công trình nghiên cứu khoa học, đạt giải Nhì cấp Khoa và giải Ba cấp Học viện — trái ngọt cho những 2 tuần thức đêm miệt mài cùng số liệu."
   },
   {
     date: "19/09/2025",
     title: "Học bổng khuyến khích học tập — Lần 2",
-    desc: "Manifest thành công học bổng khuyến khích học tập lần thứ hai, tiếp nối hành trình cố gắng không ngừng nghỉ."
+    desc: "Manifest thành công học bổng khuyến khích học tập lần thứ hai, oách xà lách quá đi thôi hehe."
   },
   {
     date: "24/11/2025",
     title: "Đội tuyển Olympic Tin học",
-    desc: "Đỗ đội tuyển Olympic Tin học, đại diện Học viện tham gia khối không chuyên tại Hồ Chí Minh — một trải nghiệm đáng nhớ ngoài giảng đường quen thuộc."
+    desc: "Đỗ đội tuyển Olympic Tin học, đại diện Học viện tham gia khối không chuyên tại Hồ Chí Minh — một trải nghiệm đáng nhớ ngoài giảng đường quen thuộc và đặc biệt được tham gia cùng thầy Sang và cô Lan - 2 thầy cô siêu tận tâm, có thêm 2 người bạn đồng hành trong cuộc thi siêu vui."
   },
   {
     date: "14/05/2026",
@@ -149,7 +149,7 @@ const timeline = [
   {
     date: "01/06/2026",
     title: "Học bổng khuyến khích học tập — Lần 3",
-    desc: "Manifest thành công học bổng khuyến khích học tập lần thứ ba, một dấu mốc đẹp trước khi khép lại hành trình sinh viên."
+    desc: "Manifest thành công học bổng khuyến khích học tập lần thứ ba, lần này thì chắc chắn bản thân được học bổng và hắn ta đã dành học bổng để đi khám phá vùng đất mới - nơi hắn luôn luôn muốn đặt chân đến."
   }
 ];
 
